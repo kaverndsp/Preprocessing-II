@@ -5,8 +5,10 @@
     padding-top: 1%;
     padding-bottom: 2%;
     border-bottom: 2px dashed @navigation-border;  
+    
+  
     .funbus{
-        width:55%;
+       width:55%;
     }
     
     .links{
@@ -15,6 +17,7 @@
         align-items: center;
         width:45%;
         margin-top:1%;
+        
 
         a{
             font-size:1.5rem;
@@ -23,4 +26,23 @@
         }
             
     }
+
+
+    @media @mobile{
+        .flex();
+        
+        align-items: center;
+        flex-direction: column;
+        
+        .funbus{
+        margin-left:28%;
+        }
+
+        .links{
+          .flex();
+          justify-content: space-around;
+          width:100%;
+        }
+    }
+     
 }
